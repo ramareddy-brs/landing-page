@@ -140,10 +140,11 @@ function checkEscKeyPress(e) {
 
 // Function that handles mouse click event for name
 function mouseClicked() {
-  greetName.textContent = "[Enter Name]";
+  greetName.textContent = "";
   localStorage.setItem("name", '[Enter Name]');
   return;
 }
+
 
 // Event Listeners
 greetName.addEventListener("keypress", setName);
